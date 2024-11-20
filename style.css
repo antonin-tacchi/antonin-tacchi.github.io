@@ -1,6 +1,14 @@
 body{
     background-color: #010148;
 }
+h2{
+    color: white;
+    text-decoration: none;
+}
+h3{
+    color: white;
+    text-decoration: none;
+}
 /*header*/
 header{
     color: white;
@@ -9,15 +17,16 @@ header{
     background-color:#1B1B7D;
 }
 .about{
-    padding-left: 44em;
+    padding-left: 43em;
 }
 .portfolio_{
     padding-left: 1.5em;
 }
 .contact{
     padding-left: 1.5em;
+    margin-right: 1em   ;
 }
-/*first-name*/
+/*name*/
 .first-name{
     color: white;
     font-size: 10em;
@@ -35,6 +44,7 @@ header{
     justify-content: center;
     margin-top: -3.5em;
 }
+/*meteor image*/
 .Meteor-Falling-PNG{
     position:absolute;
     z-index: +1;
@@ -44,4 +54,64 @@ header{
     height: 50em;
     opacity: 80%;
 }
+/*About*/
+.about_{
+    margin-top: 7em;
+    font-size: 3em;
+    margin-left: 1em;
+}
+.description{
+    margin-left: 3em;
+    margin-right: 5em;
+    font-size: 1.5em;
+}
+/*Portfolio*/
+.portfolio{
+    font-size: 3em;
+    margin-left: 1em;
+    margin-top: 3em;
+}
+.fan-site{
+    font-size: 1.5em;
+    margin-left: 2em;
+}
+.index-nekfeu{
+    height: 40%;
+    width: 40%;
+    margin-left: 9em;
+}
+.realisation-nekfeu{
+    height: 40%;
+    width: 40%;
+    margin-right:  9em;
+}
+.index-nekfeu-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.realisation-nekfeu-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-nekfeu{
+    padding-left: 2em;
+    margin-right: 8em;
+}.text-real{
+    padding-right: 2em;
+    margin-left: 8em;
+}
+/*Contact*/
+.contact_{
+    margin-top: 5em;
+    margin-left: 1em;
+    font-size: 3em;
+
+}
+a{
+    text-decoration: none;
+}
+
+
 
