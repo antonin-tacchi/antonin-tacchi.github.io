@@ -349,3 +349,17 @@ footer{
         margin-left: 40%;
     }
 }
+@media screen and (min-width: 1441px) and (max-width:2560px) {
+    .about{
+        padding-left: 61em;
+    }
+    .Meteor-Falling-PNG{
+        position:absolute;
+        z-index: +1;
+        top:7em;
+        left:20em;
+        width: 60em;
+        height: 60em;
+        opacity: 80%;
+    }
+}
