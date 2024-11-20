@@ -9,7 +9,12 @@ h3{
     color: white;
     text-decoration: none;
 }
-/*header*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* header */
 header{
     color: white;
     display: flex;
@@ -26,7 +31,8 @@ header{
     padding-left: 1.5em;
     margin-right: 1em   ;
 }
-/*name*/
+
+/*name */
 .first-name{
     color: white;
     font-size: 10em;
@@ -44,7 +50,8 @@ header{
     justify-content: center;
     margin-top: -3.5em;
 }
-/*meteor image*/
+
+/*meteor image */
 .Meteor-Falling-PNG{
     position:absolute;
     z-index: +1;
@@ -54,7 +61,8 @@ header{
     height: 50em;
     opacity: 80%;
 }
-/*About*/
+
+/*About */
 .about_{
     margin-top: 7em;
     font-size: 3em;
@@ -65,7 +73,8 @@ header{
     margin-right: 5em;
     font-size: 1.5em;
 }
-/*Portfolio*/
+
+/*Portfolio */
 .portfolio{
     font-size: 3em;
     margin-left: 1em;
@@ -102,16 +111,241 @@ header{
     padding-right: 2em;
     margin-left: 8em;
 }
-/*Contact*/
+
+/*Contact */
 .contact_{
     margin-top: 5em;
     margin-left: 1em;
     font-size: 3em;
 
 }
-a{
+
+/* From Uiverse.io by Mangesh636 */
+button {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(0, 119, 181);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(0, 119, 181);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    margin-top: -1em;
+    margin-left: 7em;
 }
 
+button span {
+    margin: 10px;
+}
+  
+button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+}
+  
+button:hover {
+    color: #fff;
+    border: 1px solid rgb(0, 119, 181);
+}
+  
+button:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
+}
 
+/* From Uiverse.io by TreepDeep */
+.button.x {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(24, 23, 23, 0.25);
+    gap: 0.75rem;
+    color: #ffffff;
+    background-color: rgb(24, 23, 23);
+    cursor: pointer;
+    transition: all 0.6s ease;
+    text-decoration: none;
+}
+.button.x svg {
+    height: 24px;
+    width: 24px;
+    fill: #fff;
+    margin-right: 0.5rem;
+}
+.button.x:hover {
+    transform: scale(1.02);
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.button.x:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.button.x:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+.button_{
+    margin-top: -2.5em;
+    margin-left: 27em;
+}
+.gmail{
+    /* position: relative; */
+    bottom: 3em;
+    left:65em;
+    height: 4%;
+    width: 4%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 10%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 10px; /* Coins arrondis pour une esthétique moderne  */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombrage autour des logos */
+}
+.gmail:hover{
+    transform: scale(1.15); 
+    filter: brightness(1.3);
+}
+.email{
+    /* position: relative; */
+    bottom: 6em;
+    left: 60em;
+}
+footer{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #1B1B7D;
+    height: 5em;
+}
+.copyright{
+    margin-left: 45%;
+}
 
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .contact-row {
+        display: flex;
+        flex-direction: row;
+
+        .icon-content a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+  
+@media (max-width: 480px) {
+    .button.x {
+      max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .first-name{
+        font-size: 3em;
+    }
+    .web-dev{
+        font-size: 1.5em;
+        position: relative;
+        top: 3em;
+    }
+    header{
+        display: flex;
+    }
+    .Meteor-Falling-PNG{
+        position:absolute;
+        z-index: +1;
+        top:7em;
+        left:1em;
+        width: 17em;
+        height: 17em;
+        opacity: 80%;
+    }
+    .about_{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .description{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .index-nekfeu-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .realisation-nekfeu-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .realisation-nekfeu{
+        height: 60%;
+        width: 60%;
+    }
+    .index-nekfeu{
+        height: 60%;
+        width: 60%;
+    }
+    .table_nekfeu{
+        flex-wrap:wrap ;
+    }
+    .contact_{
+        margin-left: 0.5em;
+    }
+    .contact-row{
+        flex-wrap: wrap;
+    }
+    .copyright{
+        margin-left: 25%;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .Meteor-Falling-PNG{
+        position:absolute;
+        z-index: +1;
+        top:7em;
+        left:15em;
+        width: 17em;
+        height: 17em;
+        opacity: 80%;
+    }
+    .copyright{
+        margin-left: 40%;
+    }
+}
