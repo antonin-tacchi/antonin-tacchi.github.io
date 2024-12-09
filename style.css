@@ -285,7 +285,26 @@ footer{
     width: 50%;
     margin-left: 5em;
 }
-
+.chambre{
+    margin-left: 3em;
+    height: 35%;
+    width: 35%;
+}
+.modelisation_lien{
+    color: aqua;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+.modelisation-sous-titre{
+    text-decoration: underline;
+}
+.chambre-div{
+    display: flex;
+    justify-content: center;
+}
+.anime-salle{
+    margin-left: 15%;
+}
 
 @media (max-width: 480px) {
     .button.x {
