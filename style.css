@@ -284,6 +284,7 @@ footer{
     height: 50%;
     width: 50%;
     margin-left: 25%;
+    padding-bottom: 2em;
 }
 .chambre{
     margin-left: 3em;
@@ -301,10 +302,13 @@ footer{
 .chambre-div{
     display: flex;
     justify-content:space-around;
+    padding-bottom: 2em;
 }
 .anime-salle{
     display: flex;
     justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em
 }
 .modelisation-sous-titre,
 .titre-salle,
@@ -312,9 +316,13 @@ footer{
     margin-left: 2em;
     text-decoration: underline;
 }
+.modelisation-sous-titre{
+    padding-top: 1.5em;
+}
 .titre-modelisation{
     text-decoration: underline;
     margin-left: 1em;
+    margin-top: 1.5em;
 }
 .salle{
     height: 35%;
@@ -323,6 +331,27 @@ footer{
 .div-salle{
     display: flex;
     justify-content: space-around;
+}
+.chambre-div-2{
+    background-color: #333;
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.salle-div-2{
+    background-color: #333;
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.titre-salle{
+    padding-top: 1.5em;
+}
+.sous-titre{
+    background-color: #333;
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 @media (max-width: 480px) {
