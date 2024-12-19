@@ -287,7 +287,6 @@ footer{
     padding-bottom: 2em;
 }
 .chambre{
-    margin-left: 3em;
     height: 35%;
     width: 35%;
 }
@@ -353,10 +352,19 @@ footer{
     margin-left: 2em;
     margin-right: 2em;
 }
+.div-salle{
+    padding-bottom: 2em;
+}
 
 @media (max-width: 480px) {
     .button.x {
       max-width: 100%;
+    }
+    .anime-salle{
+        display: none;
+    }
+    .chambre-div{
+        flex-wrap: wrap;
     }
 }
 
@@ -368,6 +376,9 @@ footer{
         font-size: 1.5em;
         position: relative;
         top: 3em;
+    }
+    .chambre-div{
+        flex-wrap: wrap;
     }
     header{
         display: flex;
