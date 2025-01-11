@@ -1,5 +1,5 @@
 body{
-    background-color: #010148;
+    background-color: #023E8A;
 }
 h2{
     color: white;
@@ -18,11 +18,26 @@ h1{
 }
 /* header */
 header{
+    position:fixed;
     color: white;
     display: flex;
     justify-content: end;
-    background-color:#1B1B7D;
+    background-color:#0077B6;
+    margin-top: -15em;
+    margin-left: -1em;
+    width: 90em;
 }
+.header{
+    position:fixed;
+    color: white;
+    display: flex;
+    justify-content: end;
+    background-color:#0077B6;
+    margin-top: -6em;
+    margin-left: -1em;
+    width: 90em;
+}
+
 .about{
     padding-left: 43em;
 }
@@ -251,8 +266,16 @@ footer{
     display: flex;
     align-items: center;
     color: white;
-    background-color: #1B1B7D;
+    background-color: #0077B6;
     height: 5em;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #0077B6;
+    height: 5em;
+    margin-top: 2em;
 }
 .copyright{
     margin-left: 45%;
@@ -321,7 +344,7 @@ footer{
 .titre-modelisation{
     text-decoration: underline;
     margin-left: 1em;
-    margin-top: 1.5em;
+    margin-top: 3em;
 }
 .salle{
     height: 35%;
