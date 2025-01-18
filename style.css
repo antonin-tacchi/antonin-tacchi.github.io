@@ -24,8 +24,8 @@ header{
     justify-content: end;
     background: linear-gradient(180deg, rgba(0,119,182,1) 0%, rgba(2,62,138,1) 90%);
     margin-top: -15em;
-    margin-left: -1em;
-    width: 90em;
+    margin-left: -1.5em;
+    width: 101.7%;
 }
 .header{
     position:fixed;
@@ -34,8 +34,8 @@ header{
     justify-content: end;
     background-color:#0077B6;
     margin-top: -6em;
-    margin-left: -1em;
-    width: 90em;
+    margin-left: -1.5em;
+    width: 101.7%;
 }
 
 .about{
@@ -284,7 +284,7 @@ footer{
     margin-bottom: -1em;
 }
 .copyright{
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 45%;
 }
 
@@ -481,9 +481,9 @@ footer{
         position:absolute;
         z-index: +1;
         top:7em;
-        left:20em;
-        width: 60em;
-        height: 60em;
+        left:27em;
+        width: 50em;
+        height: 50em;
         opacity: 80%;
     }
 }
