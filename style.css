@@ -1,489 +1,268 @@
-body{
-    background-color: #000000;
-}
-h2{
-    color: white;
-    text-decoration: none;
-}
-h3{
-    color: white;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-h1{
-    color: white;
-}
-/* header */
-header{
-    position:fixed;
-    color: white;
-    display: flex;
-    justify-content: end;
-    background: linear-gradient(180deg, rgb(82, 82, 82) 0%, rgb(0, 0, 0) 90%);
-    margin-top: -15em;
-    margin-left: -1.5em;
-    width: 101.7%;
-}
-.header{
-    position:fixed;
-    color: white;
-    display: flex;
-    justify-content: end;
-    background-color:#0077B6;
-    margin-top: -6em;
-    margin-left: -1.5em;
-    width: 101.7%;
+body {
+    background: linear-gradient(90deg, rgba(11,0,51,1) 0%, rgba(0,0,0,1) 50%, rgba(11,0,51,1) 100%);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
-.about{
-    padding-left: 43em;
-}
-.portfolio_{
-    padding-left: 1.5em;
-}
-.contact{
-    padding-left: 1.5em;
-    margin-right: 1em   ;
-}
-.modelisation{
-    margin-right: 1em;
-    padding-left: 0.5em;
-}
-.acceuil{
-    padding-right: 1em;
+a {
+    text-decoration: none;
+    color: #00ffea;
+    transition: color 0.3s ease;
+    font-size: 0.9em; 
 }
 
-/*name */
-.first-name{
+a:hover {
+    color: #00bfff;
+    text-shadow: 0 0 5px #00bfff;
+}
+
+header {
+    position: fixed;
     color: white;
-    font-size: 10em;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top:1.5em;
-    position:static;
-}
-.web-dev{
-    color: white;
-    font-size: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -3.5em;
-}
-
-/*meteor image */
-.Meteor-Falling-PNG{
-    position:absolute;
-    z-index: +1;
-    top:8em;
-    left:17em;
-    width: 50em;
-    height: 50em;
-    opacity: 80%;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #0b0033 0%, #1a0066 50%, #000000 100%);
+    padding: 0.5em 1em;
+    box-shadow: 0 0 5px #1a0066;
+    width: 98%;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+    font-size: 0.9em;
+    top: 0%;
 }
 
-/*About */
-.about_{
-    margin-top: 7em;
-    font-size: 3em;
-    margin-left: 1em;
+.banner{
+    margin-top: 15em;
 }
 .description{
-    margin-left: 3em;
-    margin-right: 5em;
-    font-size: 1.5em;
+    padding-bottom: 6%;
 }
-
-/*Portfolio */
-.portfolio{
-    font-size: 3em;
-    margin-left: 1em;
-    margin-top: 3em;
+.arriere-plan{
+    margin-top: -5%;
+}
+.text-apropos,
+.arriere-plan{
+    background: linear-gradient(90deg, rgba(11,0,51,1) 0%, rgba(0,0,0,1) 50%, rgba(11,0,51,1) 100%);
+}
+.text-nekfeu,
+.text-real{
+    font-size: 130%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .fan-site{
     font-size: 1.5em;
-    margin-left: 2em;
+    margin-left: 5%;
 }
-.index-nekfeu{
-    height: 40%;
-    width: 40%;
-    margin-left: 9em;
-}
-.realisation-nekfeu{
-    height: 40%;
-    width: 40%;
-    margin-right:  9em;
-}
-.index-nekfeu-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.realisation-nekfeu-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.text-nekfeu{
-    padding-left: 2em;
-    margin-right: 8em;
-}.text-real{
-    padding-right: 2em;
-    margin-left: 8em;
-}
-
-/*Contact */
+.about_, 
 .contact_{
-    margin-top: 5em;
-    margin-left: 1em;
+    margin-top: 2em;
     font-size: 3em;
-
+}
+.about_{
+    margin-left: 3%;
+}
+.description{
+    font-size: 1.5em;
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
-/* From Uiverse.io by Mangesh636 */
-button {
-    background: transparent;
-    position: relative;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid rgb(0, 119, 181);
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    color: rgb(0, 119, 181);
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    margin-top: -1em;
-    margin-left: 7em;
-}
-
-button span {
-    margin: 10px;
-}
-  
-button::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: "";
-    border-radius: 50%;
-    display: block;
-    width: 20em;
-    height: 20em;
-    left: -5em;
-    text-align: center;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-}
-  
-button:hover {
-    color: #fff;
-    border: 1px solid rgb(0, 119, 181);
-}
-  
-button:hover::before {
-    box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
-}
-
-/* From Uiverse.io by TreepDeep */
-.button.x {
-    max-width: 320px;
-    display: flex;
-    padding: 0.5rem 1.4rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 0.5rem;
-    border: 1px solid rgba(24, 23, 23, 0.25);
-    gap: 0.75rem;
+.first-name {
     color: #ffffff;
-    background-color: rgb(24, 23, 23);
-    cursor: pointer;
-    transition: all 0.6s ease;
-    text-decoration: none;
+    font-size: 10em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
 }
-.button.x svg {
-    height: 24px;
-    width: 24px;
-    fill: #fff;
-    margin-right: 0.5rem;
+
+.web-dev {
+    color: #b3b3ff;
+    font-size: 2em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4em;
+    text-shadow: 0 0 5px #b3b3ff, 0 0 10px #b3b3ff;
 }
-.button.x:hover {
-    transform: scale(1.02);
-    background-color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.button.x:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
-}
-.button.x:active {
-    transform: scale(0.98);
-    opacity: 0.8;
-}
-.button_{
-    margin-top: -2.5em;
-    margin-left: 27em;
+.index-nekfeu,
+.realisation-nekfeu {
+    height: 30%;
+    width: 30%;
+    margin-left: 3%;
+    border: 2px solid #00bfff; 
 }
 .gmail{
-    /* position: relative; */
-    bottom: 3em;
-    left:65em;
-    height: 4%;
-    width: 4%;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    border-radius: 10%;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    border-radius: 10px; /* Coins arrondis pour une esthétique moderne  */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombrage autour des logos */
+    height: 50%;
+    width: 15%;
 }
-.gmail:hover{
-    transform: scale(1.15); 
-    filter: brightness(1.3);
-}
-.email{
-    /* position: relative; */
-    bottom: 6em;
-    left: 60em;
-}
-footer{
+.contact-row{
     display: flex;
-    align-items: center;
-    color: white;
-    background: linear-gradient(0deg, rgb(97, 97, 97) 65%, rgb(0, 0, 0) 100%);
-    height: 5em;
-    width: 101.7%;
-    margin-left: -1em;
-    margin-bottom: -1em;
+    justify-content: space-around;
+    margin-left: 20%;
 }
-.footer{
-    display: flex;
-    align-items: center;
-    color: white;
-    background: linear-gradient(0deg, rgb(97, 97, 97) 65%, rgb(0, 0, 0) 100%);
-    height: 5em;
-    margin-top: 2em;
-    width: 110%;
-    margin-left: -1em;
-    margin-bottom: -1em;
+.contact_{
+    padding-bottom: 2em;
+    margin-left: 3%;
 }
-.copyright{
-    margin-top: 2%;
-    margin-left: 45%;
+.portfolio{
+    font-size: 3em;
+    margin-left: 3%;
 }
 
-.contact-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    .contact-row {
-        display: flex;
-        flex-direction: row;
+/* Meteor */
+.Meteor-Falling-PNG {
+    position: absolute;
+    z-index: -1;
+    top: 1em;
+    left: 15em;
+    width: 70%; 
+    height: auto; 
+    opacity: 0.5;
+    animation: fall 180s infinite linear;
+}
 
-        .icon-content a {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-
-            img {
-                width: 30%;
-            }
-        }
+@keyframes fall {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
-/*PARTIE Modelisation 3D*/
-.video-pont{
-    height: 50%;
-    width: 50%;
-    margin-left: 25%;
-    padding-bottom: 2em;
+
+/* Buttons */
+button {
+    background: transparent;
+    border: 2px solid #00bfff;
+    border-radius: 20px; 
+    color: #00bfff;
+    font-size: 0.8em; 
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px; 
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+    color: #000000;
+    background: #00bfff;
+    box-shadow: 0 0 10px #00bfff;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(0deg, #0b0033 0%, #1a0066 100%);
+    height: 3em;
+    width: 101.5%;
+    margin-left: -1%;
+    font-size: 1.5em; 
+    box-shadow: 0 0 5px #1a0066;
+}
+
+.copyright {
+    color: #b3b3ff;
+    font-size: 0.7em;
+    text-shadow: 0 0 3px #b3b3ff;
+}
+
+.anime-salle{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.modelisation-sous-titre{
+    margin-left: 3%;
+    margin-top: 5%;
+    padding-top: 2%;
+}
+.titre-salle{
+    margin-left: 3%;
+    margin-top: 5%;
+    padding-top: 2%;
 }
 .chambre{
     height: 35%;
     width: 35%;
 }
-.modelisation_lien{
-    color: aqua;
-    text-decoration: underline;
-    text-decoration-color: aqua;
-}
-.modelisation-sous-titre{
-    text-decoration: underline;
-}
 .chambre-div{
     display: flex;
-    justify-content:space-around;
-    padding-bottom: 2em;
-}
-.anime-salle{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2em;
-    padding-top: 2em
-}
-.modelisation-sous-titre,
-.titre-salle,
-.modelisation-sous-titre{
-    margin-left: 2em;
-    text-decoration: underline;
-}
-.modelisation-sous-titre{
-    padding-top: 1.5em;
-}
-.titre-modelisation{
-    text-decoration: underline;
-    margin-left: 1em;
-    margin-top: 3em;
-}
-.salle{
-    height: 35%;
-    width: 35%;
+    justify-content: space-around;
 }
 .div-salle{
     display: flex;
     justify-content: space-around;
 }
 .chambre-div-2{
-    background-color: #333;
-    margin-top: 5em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
+    background-color: #140050;
+    margin: 0% 2% 0% 2% ;
+} 
 .salle-div-2{
-    background-color: #333;
-    margin-top: 5em;
-    margin-left: 2em;
-    margin-right: 2em;
+    background-color: #140050;
+    margin: 0% 2% 0% 2% ;
 }
-.titre-salle{
-    padding-top: 1.5em;
+.salle{
+    height: 35%;
+    width: 35%;
+}
+.video-pont{
+    width: 60%;
+    height: auto;
+    padding-left: 20%;
+    padding-bottom: 3%;
+    padding-top: 2%;
 }
 .sous-titre{
-    background-color: #333;
-    margin-top: 5em;
-    margin-left: 2em;
-    margin-right: 2em;
+    background-color: #140050;
+    margin: 0% 2% 0% 2% ;
+    margin-bottom: 4%;
 }
-.div-salle{
-    padding-bottom: 2em;
+
+@media (max-width: 768px) {
+    .first-name {
+        font-size: 2em;
+    }
+
+    .web-dev {
+        font-size: 0.8em;
+        margin-top: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Meteor-Falling-PNG {
+        width: 15em;
+        height: 15em;
+    }
 }
 
 @media (max-width: 480px) {
-    .button.x {
-      max-width: 100%;
+    .Meteor-Falling-PNG {
+        top: 5em;
+        left: 5em;
+        width: 10em;
+        height: 10em;
     }
-    .anime-salle{
-        display: none;
-    }
-    .chambre-div{
-        flex-wrap: wrap;
-    }
-}
 
-@media screen and (min-width: 320px) and (max-width: 768px){
-    .first-name{
-        font-size: 3em;
-    }
-    .web-dev{
+    .first-name {
         font-size: 1.5em;
-        position: relative;
-        top: 3em;
     }
-    .chambre-div{
-        flex-wrap: wrap;
-    }
-    header{
-        display: flex;
-    }
-    .Meteor-Falling-PNG{
-        position:absolute;
-        z-index: +1;
-        top:7em;
-        left:1em;
-        width: 17em;
-        height: 17em;
-        opacity: 80%;
-    }
-    .about_{
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }
-    .description{
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .index-nekfeu-text{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .realisation-nekfeu-text{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .realisation-nekfeu{
-        height: 60%;
-        width: 60%;
-    }
-    .index-nekfeu{
-        height: 60%;
-        width: 60%;
-    }
-    .table_nekfeu{
-        flex-wrap:wrap ;
-    }
-    .contact_{
-        margin-left: 0.5em;
-    }
-    .contact-row{
-        flex-wrap: wrap;
-    }
-    .copyright{
-        margin-left: 25%;
-    }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) {
-    .Meteor-Falling-PNG{
-        position:absolute;
-        z-index: +1;
-        top:7em;
-        left:15em;
-        width: 17em;
-        height: 17em;
-        opacity: 80%;
-    }
-    .copyright{
-        margin-left: 40%;
-    }
-}
-@media screen and (min-width: 1441px) and (max-width:2560px) {
-    .about{
-        padding-left: 61em;
-    }
-    .Meteor-Falling-PNG{
-        position:absolute;
-        z-index: +1;
-        top:7em;
-        left:27em;
-        width: 50em;
-        height: 50em;
-        opacity: 80%;
+
+    .web-dev {
+        font-size: 0.6em;
     }
 }
