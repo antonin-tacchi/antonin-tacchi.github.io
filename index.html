@@ -1,111 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="link.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>Portfolio</title>
+    <title>CosmoDev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <a href="#about">
-            <h2 class="about">A-propos</h2>
-        </a>
-        <a href="#portfolio">
-            <h2 class="portfolio_">Portfolio</h2>
-        </a>
-        <a href="#Contact-">
-            <h2 class="contact">Contact</h2>
-        </a>
-    </header>
-    <div class="banner">
-        <h1 class="first-name">Tacchi Antonin</h1>
-        <h1 class="web-dev">Dévelloppeur / Designer web</h1>
-        <div class="text-apropos">
-            <h2 class="about_" id="about"><u>A-propos de moi:</u></h2>
-            <h3 class="description">
-                Bonjour à tous,
-                Je m'appelle Antonin, et je suis développeur web. Passionné par les technologies numériques et
-                le monde du développement, je me spécialise dans la création de sites web modernes, interactifs
-                et performants. Je vis en France, un pays riche en histoire et en innovation,
-                ce qui m'inspire au quotidien dans mon métier.
-                Toujours à la recherche de nouveaux défis, je suis curieux d'apprendre les dernières
-                tendances technologiques, que ce soit dans le domaine du front-end, du back-end ou des
-                solutions complètes. En plus de mes compétences en développement, je pratique également
-                la modélisation 3D. Vous pouvez retrouver des exemples de mes travaux de
-                modélisation sur une autre <a class="modelisation_lien" href="3D.html">page dédiée</a>.
-                Au-delà de ma passion pour le code, j'aime aussi explorer d'autres univers :
-                je suis un grand amateur de design graphique, de photographie et de jeux vidéo.
-                Ces intérêts m'aident à cultiver une approche créative dans mes projets professionnels.
-                Vous pouvez me retrouver sur mes réseaux ou via mon portfolio, où je partage mes
-                réalisations et mes projets en cours. N'hésitez pas à me contacter si vous voulez
-                collaborer ou simplement échanger des idées.</h3>
-        </div>
-    </div>
-    <div class="arriere-plan">
-        <h2 id="portfolio" class="portfolio"><u>Portfolio:</u></h2>
-        <h3 class="fan-site"><u>Fans-site sur Nekfeu : </u></h3>
-        <div class="table_nekfeu">
-            <div class="index-nekfeu-text">
-                <img class="index-nekfeu" src="image/Capture d'écran 2024-11-19 131124.png" alt="">
-                <h3 class="text-nekfeu">Durant ce projet j'ai créer une page réalisation avec ses albums. La
-                    présentation de
-                    ses albums
-                    est faites avec ses sons qui apparaissent quand on passe la sourit sur l'album, deplus
-                    quand on clique dessus cela nous redirige vers la page de l'album sur spotify.
-                </h3>
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="hero-background">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fd1b62fa49c96595a8e943187b01e0c933e3aa74fee5a818536eee8e19837150?placeholderIfAbsent=true&apiKey=c02be817a8ce4cc498da11a30bb2f2c4" alt="Thème spatial en arrière-plan" class="hero-image">
+                <nav class="nav-container" aria-label="Navigation principale">
+                    <div class="nav-wrapper">
+                        <div class="nav-content">
+                            <div class="brand-name">
+                                <span class="brand-name-light">Cosmo</span>
+                                <span class="brand-name-accent">Dev</span>
+                            </div>
+                            <div class="nav-links">
+                                <a href="#accueil" class="nav-link">Accueil</a>
+                                <a href="#projets" class="nav-link">Projets</a>
+                                <a href="#competences" class="nav-link">Compétences</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="hero-text-container">
+                    <div class="hero-text-wrapper">
+                        <h1 class="hero-heading">
+                            <span class="hero-heading-light">TACCHI </span>
+                            <span class="hero-heading-accent">Antonin</span>
+                        </h1>
+                        <p class="hero-subheading">Développeur full-stack créant des expériences web stellaires</p>
+                        <div class="hero-buttons">
+                            <a href="#projets" class="nav-link"><button class="primary-button">Voir Mes Projets WEB</button></a>
+                            <a href="#contact" class="nav-link"><button class="secondary-button">Me Contacter</button></a>
+                            <a href="3D.html"><button class="primary-button">Voir Mes Projets 3D</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="realisation-nekfeu-text">
-                <img class="realisation-nekfeu" src="image/Capture d'écran 2024-11-19 131046.png" alt="">
-                <h3 class="text-real">Pour cette page la, j'ai fais une sorte de menu déroulant qui montre les albums de
-                    nekfeu quand on passe
-                    la souris de par dessus, et quand on clique dessus cela nous redirige vers la page spotify de
-                    l'album en
-                    en question.
-                </h3>
-            </div>
-        </div>
-    </div>
 
-    <!-- CONTACT CONTENT -->
-    <div class="contact-content">
-        <h2 id="Contact-" class="contact_"><u>Contact:</u></h2>
-        <div class="contact-row">
-            <div class="icon-content">
-                <a href="https://www.linkedin.com/in/antonin-tacchi-4b7b32338/" target="_blank">
-                    <img class="gmail" src="image/logo_linkedin-removebg-preview.png" alt="">
-                    <h3>LinkedIn</h3>
-                </a>
-            </div>
-            <!-- GITHUB -->
-            <div class="icon-content">
-                <a href="https://github.com/antonin-tacchi" target="_blank">
-                    <img class="gmail" src="image/logo_github-removebg-preview.png" alt="">
-                    <h3>Gitub</h3>
-                </a>
-            </div>
-            <!-- GMAIL -->
-            <div class="icon-content">
-                <a href="https://mail.google.com/mail/u/2/?pli=1#inbox?compose=jrjtXPVFZGFdTmZQNjrCDKcLBkZmkHKnFdCqMhtrptXMxdRPvHPRGXqnmhFcknhHcfVKtgKk"
-                    target="_blank">
-                    <img class="gmail" src="image/gmail_logo_PNG9.webp" alt="">
-                    <h3 class="email">antonin.tacchi2005@gmail.com</h3>
-                </a>
-            </div>
+            <section id="projets" class="projects-section">
+                <div class="projects-container">
+                    <h2 class="section-heading">
+                        <span class="section-heading-light">Projets </span>
+                        <span class="section-heading-accent">Vedettes</span>
+                    </h2>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <img src="asset/page-acceuil-nekfeu.png" alt="page d'acceuil d'un fan-site sur nekfeu" class="project-image">
+                            <div class="project-content">
+                                <h3 class="project-title">Fan-Site</h3>
+                                <p class="project-description">Un fan-site sur une personnalité connue du grand publique</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- <article class="project-card">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0569c975259b34fc63c4b096900ea6ae4ddc5858507c5a5cf0b2ba7907696bee?placeholderIfAbsent=true&apiKey=c02be817a8ce4cc498da11a30bb2f2c4" alt="Aperçu de la plateforme Nebula Commerce" class="project-image">
+                            <div class="project-content">
+                                <h3 class="project-title">Nebula Commerce</h3>
+                                <p class="project-description">Plateforme e-commerce avec une expérience utilisateur fluide</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">SQL</span>
+                                </div>
+                            </div>
+                        </article> -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="competences" class="skills-section">
+                <div class="skills-container">
+                    <h2 class="section-heading">
+                        <span class="section-heading-light">Compétences </span>
+                        <span class="section-heading-accent">Techniques</span>
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="category-title">Frontend</h3>
+                            <ul class="skills-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="category-title">Backend</h3>
+                            <ul class="skills-list">
+                                <li>Python</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="category-title">Base de données</h3>
+                            <ul class="skills-list">
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="category-title">DevOps</h3>
+                            <ul class="skills-list">
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-content">
+                        <h2 class="section-heading">
+                            <span class="section-heading-light">Restons en </span>
+                            <span class="section-heading-accent">Contact</span>
+                        </h2>
+                        <div class="contact-form-container">
+                            <form class="contact-form" method="post">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" name="message" class="form-textarea" required></textarea>
+                                </div>
+                                <a href="mailto: antonin.tacchi2005@gmail.com"><button type="submit" class="submit-button">Envoyer le Message</button></a>
+                                <p>le formulaire ne fonctionne pas malheureusement. :(</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <p>© 2025 CosmoDev. Tous droits réservés.</p>
+                        <div class="reseaux">
+                            <a href="https://www.linkedin.com/in/antonin-tacchi-4b7b32338/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEklEQVR4nO2YO08CQRDH11jYGisTW7X1E1jZKcTSL2EQJHJbEAsJiZ2FhZ2FpbWFDY/IO0YN3GIEiQWFxhhBER8oMGZvFVC4wJ3mbi/ZfzIh7GyW+e3Mzh2LkJCQkBDfkrKLSCJhhEkVYQIGWRVhEkKSbP9b8FjeNDBoUDG//p03P3hgJtt0AChlw0HwBJBEgjoA5CeOMlDRDqC2mCcNyJUEtBJjn/S7ERCapRL8tC8FR5dlqNbqECmUYWojZQyEZvVaxJVUgu5UOF9mmbAEwEpM2flOPb3VWTlZAsBl9Qx42BmgEDQToXwJJi11BrDVu5AzAcgR7TY63s8vZQC5j9tznF8bsHZK+7xBAI4I9BId7+ef8CZhK1iE7HUVXt8b8PDyoZTi8n4ORtyJ/pk0E2DGn4LbSg3UdFKswLg3ybLEI0Dh7gX6KZQvwZArzifAoJrfyaiXkpkAjWZTqf+57TQs7WYhcFHqOW8vdcMOOm8A6wdXLDBa4540DK8m4PD8vmte7va53dF4AhjD8Z+t0pOG2a2zrnmPrx/qryVmATSbHf6WyTAqJVTmRvkCYP6o9rWwACAiA98SJYTFISaiCyHRRv/lH1mcPWh+Gx0fxK9lLfzXBxlPV4uS/KgdgN7Pmx04br07BfRkwM5PBjIL2gFYFvymB4+JT1/wLQjZptzPG3kmJPpbckD/zgsJCQkhg/QJ3PVUWJ5Zt98AAAAASUVORK5CYII=" alt="linkedin" class="footer-logo"></a>
+                            <a href="https://github.com/antonin-tacchi" target="_blank"><img src="data:image/png;base64,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" alt="github" class="footer-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-
-    <img class="Meteor-Falling-PNG" src="image/Sun-Transparent-Images.png" alt="Meteor-Falling-PNG">
-    <footer>
-        <h3 class="copyright">©2024 Tacchi Antonin©</h3>
-    </footer>
 </body>
-
 </html>
