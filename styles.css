@@ -291,6 +291,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     padding: 24px;
+    transition: transform 0.3s ease;
+}
+.skill-category:hover {
+    transform: translateY(-5px);
 }
 
 .category-title {
