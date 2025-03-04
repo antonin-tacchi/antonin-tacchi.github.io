@@ -393,6 +393,60 @@ a{
     padding-right: 1.5em;
 }
 
+.masked-text {
+    font-size: 5rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSupHNut9SJaZkIkqPQmDYIFKs88EoveZzYBQ&s'); 
+    background-size: 200%; /* Enlarged for smooth animation */
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 20s infinite linear;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.hover-underline {
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-underline::after,
+  .hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #55009abf, #ff00ea);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .hover-underline::before {
+    top: -2px;
+    transform-origin: left;
+  }
+  
+  .hover-underline:hover::after,
+  .hover-underline:hover::before {
+    transform: scaleX(1);
+  }
+
 @media (max-width: 991px) {
     .nav-container,
     .hero-text-container,
