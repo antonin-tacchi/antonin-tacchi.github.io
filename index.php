@@ -1,5 +1,7 @@
 <?php
 require_once("mail.php");
+$projetsJson = file_get_contents('projet.json');
+$projets = json_decode($projetsJson, true);
 ?>
 
 
@@ -16,6 +18,7 @@ require_once("mail.php");
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="shorcute icon" href="asset/galaxie-logo.png">
 </head>
 <body>
@@ -75,95 +78,53 @@ require_once("mail.php");
                         <span class="section-heading-accent">Vedettes</span>
                     </h2>
                     <div class="hero-buttons" id="hero-buttons">
-                        <button id="show-web-projects" class="primary-button">Voir Mes Projets WEB</button>
-                        <button id="show-3d-projects" class="primary-button">Voir Mes Projets 3D</button>
+                        <button id="show-web-projects" class="primary-button">Projets Web</button>
+                        <button id="show-3d-projects" class="primary-button">Projets 3D</button>
                     </div>
-                    <div class="projects-grid visible" id="web-projects">
-                        <a href="https://github.com/antonin-tacchi/projet-site-restauration" target="_blank">
-                            <article class="project-card">
-                                <img src="asset/projet-restauration.png" alt="Aperçu de la plateforme Nebula Commerce" class="project-image">
-                                <div class="project-content">
-                                    <h3 class="project-title">Gestion Restauration</h3>
-                                    <p class="project-description">Plateforme de gestion administratif pour un restaurant avec une expérience administrateur fluide</p>
-                                    <div class="project-tags">
-                                        <span class="project-tag">HTML</span>
-                                        <span class="project-tag">CSS</span>
-                                        <span class="project-tag">PHP</span>
-                                        <span class="project-tag">SQL</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
+                        <div id="web-projects" class="projects-grid visible">
+                                
+                                    <?php foreach ($projets as $projet): ?>
+                                        <?php if ($projet["type"] === "projet-dev"): ?>
+                                            <article class="project-card">
+                                            <a href="<?= htmlspecialchars($projet["lien-dev"])?>">
+                                                <div class="project-card">
+                                                    <img src="<?= htmlspecialchars($projet["image"])?>" alt="" class="project-image">
+                                                    <h3 class="project-title"><?= htmlspecialchars($projet["name"]) ?></h3>
+                                                    <p class="project-description"z ><?= htmlspecialchars($projet["description"]) ?></p>
+                                                    <div class="project-tags">
+                                                    <span class="project-tag"><?= implode(", ", $projet["tags-dev"]) ?></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            </article>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                
+                        </div>
 
-                        <a href="https://github.com/antonin-tacchi/livre-or/tree/main" target="_blank">
-                            <article class="project-card">
-                                <img src="asset/livre-or.png" alt="page d'acceuil d'un fan-site sur nekfeu" class="project-image">
-                                <div class="project-content">
-                                    <h3 class="project-title">Livre d'or</h3>
-                                    <p class="project-description">Un livre d'or permettant de laisser des commentaire sur une personne.</p>
-                                    <div class="project-tags">
-                                        <span class="project-tag">HTML</span>
-                                        <span class="project-tag">CSS</span>
-                                        <span class="project-tag">PHP</span>
-                                        <span class="project-tag">SQL</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
+                        <div id="model-projects" class="projects-grid hidden">
 
-                        <a href="https://antonin-tacchi.students-laplateforme.io" target="_blank">
-                            <article class="project-card">
-                                <img src="asset/quizouille.png" alt="page d'acceuil d'un fan-site sur nekfeu" class="project-image">
-                                <div class="project-content">
-                                    <h3 class="project-title">Quizouille</h3>
-                                    <p class="project-description">Un site de quiz en ligne dans lequel on puet créer ses propre quiz et jouer au quiz des autres personnes</p>
-                                    <div class="project-tags">
-                                        <span class="project-tag">HTML</span>
-                                        <span class="project-tag">CSS</span>
-                                        <span class="project-tag">PHP</span>
-                                        <span class="project-tag">SQL</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
+                            <?php foreach ($projets as $projet): ?>
+                                <?php if ($projet["type"] === "projet-model"): ?>
+                                    <article class="project-card">
+                                    <a href="<?= htmlspecialchars($projet["lien-model"])?>">
+                                            <div class="projet-card">
+                                            <img src="<?= htmlspecialchars($projet["image"])?>" alt="" class="project-image">
+                                                <h3 class="project-title"><?= htmlspecialchars($projet["name"]) ?></h3>
+                                                <p class="project-description"><?= htmlspecialchars($projet["description"]) ?></p>
+                                                <div class="project-tags">
+                                                    <span class="project-tag"><?= implode(", ", $projet["tags-3D"]) ?></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </div>
 
-                    <div class="projects-grid hidden" id="model-projects">
-                        <article class="project-card">
-                            <img src="asset/chambre.png" alt="Aperçu d'une chambre modélisé en 3D" class="project-image">
-                            <div class="project-content">
-                                <h3 class="project-title">Chambre</h3>
-                                <p class="project-description">Une modélisation d'une chambre en 3D </p>
-                                <div class="project-tags">
-                                    <span class="project-tag">Blender</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card">
-                            <img src="asset/PON.jpg" alt="Aperçu d'une modélisation 3D d'une montagne traverser par un chemain de fer" class="project-image">
-                            <div class="project-content">
-                                <h3 class="project-title">Montagne</h3>
-                                <p class="project-description">Modélisation 3D d'une montagne traversé par un chemain de fer</p>
-                                <div class="project-tags">
-                                    <span class="project-tag">Blender</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card">
-                            <img src="asset/salle.png" alt="Aperçu d'une modélisation 3D d'une salle de cours" class="project-image">
-                            <div class="project-content">
-                                <h3 class="project-title">Salle</h3>
-                                <p class="project-description">Modélisation 3D d'une salle de cours</p>
-                                <div class="project-tags">
-                                    <span class="project-tag">Blender</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
                 </div>
             </section>
+
 
             <section id="competences" class="skills-section">
                 <div class="skills-container">
