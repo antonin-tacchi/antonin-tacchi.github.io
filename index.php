@@ -1,3 +1,11 @@
+<?php
+require_once("mail.php");
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,13 +14,15 @@
     <title>CosmoDev Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
     <link rel="shorcute icon" href="asset/galaxie-logo.png">
 </head>
 <body>
     <div class="hero-section">
         <div class="hero-content">
             <div class="hero-background">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fd1b62fa49c96595a8e943187b01e0c933e3aa74fee5a818536eee8e19837150?placeholderIfAbsent=true&apiKey=c02be817a8ce4cc498da11a30bb2f2c4" alt="Thème spatial en arrière-plan" class="hero-image">
+                <img src="asset/espace.png" alt="Thème spatial en arrière-plan" class="hero-image">
                 <nav class="nav-container" aria-label="Navigation principale">
                     <div class="nav-wrapper">
                         <div class="nav-content">
@@ -25,6 +35,19 @@
                                 <a href="#projets" class="hover-underline">Projets</a>
                                 <a href="#competences" class="hover-underline">Compétences</a>
                                 <a href="#contact" class="hover-underline">Contact</a>
+                                <a href="profil/login.php" id="login-link" class="hover-underline" style="display:none";>Connexion</a>
+                            </div>
+                            <div id="menu_button">
+                                <i class="fa-solid fa-bars"></i>
+                            </div> 
+                            <div class="nav-links_burger">
+                                <a href="#accueil" class="hover-underline burger">Accueil</a>
+                                <div class="devider"></div>
+                                <a href="#projets" class="hover-underline burger">Projets</a>
+                                <div class="devider"></div>
+                                <a href="#competences" class="hover-underline burger">Compétences</a>
+                                <div class="devider"></div>
+                                <a href="#contact" class="hover-underline burger">Contact</a>                           
                             </div>
                         </div>
                     </div>
@@ -39,9 +62,7 @@
                         </div>
                         <p class="hero-subheading">Développeur full-stack créant des expériences web stellaires</p>
                         <div class="hero-buttons">
-                            <a href="#projets" class="nav-link"><button class="primary-button">Voir Mes Projets WEB</button></a>
                             <a href="#contact" class="nav-link"><button class="secondary-button">Me Contacter</button></a>
-                            <a href="3D.html"><button class="primary-button">Voir Mes Projets 3D</button></a>
                         </div>
                     </div>
                 </div>
@@ -53,9 +74,11 @@
                         <span class="section-heading-light">Projets </span>
                         <span class="section-heading-accent">Vedettes</span>
                     </h2>
-                    <div class="projects-grid">
-
-                        
+                    <div class="hero-buttons" id="hero-buttons">
+                        <button id="show-web-projects" class="primary-button">Voir Mes Projets WEB</button>
+                        <button id="show-3d-projects" class="primary-button">Voir Mes Projets 3D</button>
+                    </div>
+                    <div class="projects-grid visible" id="web-projects">
                         <a href="https://github.com/antonin-tacchi/projet-site-restauration" target="_blank">
                             <article class="project-card">
                                 <img src="asset/projet-restauration.png" alt="Aperçu de la plateforme Nebula Commerce" class="project-image">
@@ -87,6 +110,7 @@
                                 </div>
                             </article>
                         </a>
+
                         <a href="https://antonin-tacchi.students-laplateforme.io" target="_blank">
                             <article class="project-card">
                                 <img src="asset/quizouille.png" alt="page d'acceuil d'un fan-site sur nekfeu" class="project-image">
@@ -103,23 +127,68 @@
                             </article>
                         </a>
                     </div>
+
+                    <div class="projects-grid hidden" id="model-projects">
+                        <article class="project-card">
+                            <img src="asset/chambre.png" alt="Aperçu d'une chambre modélisé en 3D" class="project-image">
+                            <div class="project-content">
+                                <h3 class="project-title">Chambre</h3>
+                                <p class="project-description">Une modélisation d'une chambre en 3D </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Blender</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="asset/PON.jpg" alt="Aperçu d'une modélisation 3D d'une montagne traverser par un chemain de fer" class="project-image">
+                            <div class="project-content">
+                                <h3 class="project-title">Montagne</h3>
+                                <p class="project-description">Modélisation 3D d'une montagne traversé par un chemain de fer</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Blender</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="asset/salle.png" alt="Aperçu d'une modélisation 3D d'une salle de cours" class="project-image">
+                            <div class="project-content">
+                                <h3 class="project-title">Salle</h3>
+                                <p class="project-description">Modélisation 3D d'une salle de cours</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Blender</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <section id="competences" class="skills-section">
                 <div class="skills-container">
+
                     <h2 class="section-heading">
                         <span class="section-heading-light">Compétences </span>
                         <span class="section-heading-accent">Techniques</span>
                     </h2>
+
                     <div class="skills-grid">
                         <div class="skill-category">
                             <h3 class="category-title">Frontend</h3>
                             <ul class="skills-list">
                                 <li>HTML</li>
                                 <li>CSS</li>
+                                <li><ul class="skills-javascript">Javscript
+                                        <div class="separation_js"></div>
+                                        <li>Jquery</li>
+                                        <li>Ajax</li>
+                                        <!-- <li>ReactJS</li> -->
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
+
                         <div class="skill-category">
                             <h3 class="category-title">Backend</h3>
                             <ul class="skills-list">
@@ -127,18 +196,21 @@
                                 <li>PHP</li>
                             </ul>
                         </div>
+
                         <div class="skill-category">
                             <h3 class="category-title">Base de données</h3>
                             <ul class="skills-list">
                                 <li>MySQL</li>
                             </ul>
                         </div>
+
                         <div class="skill-category">
                             <h3 class="category-title">DevOps</h3>
                             <ul class="skills-list">
                                 <li>Git</li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -160,8 +232,8 @@
                                     <label for="message" class="form-label">Message</label>
                                     <textarea id="message" name="message" class="form-textarea" required></textarea>
                                 </div>
-                                <a href="mailto: antonin.tacchi2005@gmail.com"><button type="submit" class="submit-button">Envoyer le Message</button></a>
-                                <p>le formulaire ne fonctionne pas malheureusement. :(</p>
+                                <button type="submit" class="submit-button">Envoyer le Message</button>
+                                <p class="form-message"><?php echo $message; ?></p>
                             </form>
                         </div>
                     </div>
