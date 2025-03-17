@@ -253,6 +253,7 @@ a{
     background-color: var(--bg-dark);
     overflow: hidden;
     transition: transform 0.3s ease;
+    height: 475px;
 }
 
 .project-card:hover {
@@ -273,17 +274,21 @@ a{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
+    margin-left: 1rem;
 }
 
 .project-description {
     color: var(--text-gray);
     margin-bottom: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .project-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+    margin-left: 1rem;
 }
 
 .project-tag {

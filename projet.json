@@ -6,7 +6,10 @@
         "name": "Gestion de plat",
         "description": "Plateforme de gestion administratif pour un restaurant avec une expérience administrateur fluide.",
         "image": "asset/projet-restauration.png",
-        "tags-dev": ["PHP", "HTML", "CSS", "SQL"]
+        "tags-1": "PHP",
+        "tags-2": "HTML",
+        "tags-3": "CSS",
+        "tags-4": "SQL"
     },
     {
         "id": 2,
@@ -15,7 +18,10 @@
         "name": "Livre d'or",
         "description": "Un livre d'or permettant de laisser des commentaire sur une personne.",
         "image": "asset/livre-or.png",
-        "tags-dev": ["PHP", "HTML", "CSS", "SQL"]
+        "tags-1": "PHP",
+        "tags-2": "HTML",
+        "tags-3": "CSS",
+        "tags-4": "SQL"
     },
     {
         "id": 3,
@@ -24,16 +30,19 @@
         "name": "Quizouille",
         "description": "Un site de quiz en ligne dans lequel on puet créer ses propre quiz et jouer au quiz des autres personnes.",
         "image": "asset/quizouille.png",
-        "tags-dev": ["PHP", "HTML", "CSS", "SQL"]
+        "tags-1": "PHP",
+        "tags-2": "HTML",
+        "tags-3": "CSS",
+        "tags-4": "SQL"
     },
     {
         "id": 4,
         "type": "projet-model",
         "lien-model":"",
         "name": "Chambre",
-        "description": "Une modélisation d'une chambre en 3D.",
+        "description": "Création d'une modélisation 3D d'une chambre avec tous ses détails.",
         "image": "asset/chambre.png",
-        "tags-3D": ["Blender"]
+        "tags-1": "Blender"
     },
     {
         "id": 5,
@@ -42,15 +51,15 @@
         "name": "Montagne",
         "description": "Modélisation 3D d'une montagne traversé par un chemain de fer.",
         "image": "asset/PON.jpg",
-        "tags-3D": ["Blender"]
+        "tags-1": "Blender"
     },
     {
         "id": 6,
         "type": "projet-model",
         "lien-model":"",
         "name": "Salle de cours",
-        "description": "Modélisation 3D d'une salle de cours.",
+        "description": "Creation d'une modélisation 3D d'une salle de cours avec quelque détails.",
         "image": "asset/salle.png",
-        "tags-3D": ["Blender"]
+        "tags-1": "Blender"
     }
 ]

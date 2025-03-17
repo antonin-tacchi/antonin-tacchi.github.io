@@ -90,9 +90,16 @@ $projets = json_decode($projetsJson, true);
                                                 <div class="project-card">
                                                     <img src="<?= htmlspecialchars($projet["image"])?>" alt="" class="project-image">
                                                     <h3 class="project-title"><?= htmlspecialchars($projet["name"]) ?></h3>
-                                                    <p class="project-description"z ><?= htmlspecialchars($projet["description"]) ?></p>
+                                                    <p class="project-description"><?= htmlspecialchars($projet["description"]) ?></p>
                                                     <div class="project-tags">
-                                                    <span class="project-tag"><?= implode(", ", $projet["tags-dev"]) ?></span>
+                                                    <?php 
+                                                        for ($i = 1; $i <= 4; $i++) {
+                                                            $key = "tags-" . $i;
+                                                            if (!empty($projet[$key])) {
+                                                                echo '<span class="project-tag">' . htmlspecialchars($projet[$key]) . '</span> ';
+                                                            }
+                                                        }
+                                                    ?>
                                                     </div>
                                                 </div>
                                             </a>
@@ -113,7 +120,14 @@ $projets = json_decode($projetsJson, true);
                                                 <h3 class="project-title"><?= htmlspecialchars($projet["name"]) ?></h3>
                                                 <p class="project-description"><?= htmlspecialchars($projet["description"]) ?></p>
                                                 <div class="project-tags">
-                                                    <span class="project-tag"><?= implode(", ", $projet["tags-3D"]) ?></span>
+                                                <?php 
+                                                        for ($i = 1; $i <= 4; $i++) {
+                                                            $key = "tags-" . $i;
+                                                            if (!empty($projet[$key])) {
+                                                                echo '<span class="project-tag">' . htmlspecialchars($projet[$key]) . '</span> ';
+                                                            }
+                                                        }
+                                                    ?>
                                                 </div>
                                             </div>
                                         </a>

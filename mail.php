@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($email) && !empty($message) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         
         // Destinataire de l'email (ton adresse email)
-        $destinataire = "antonin.tacchi2005@gmail.com";  // Remplace par ton adresse email
+        $destinataire = "contact@tacchi-antonin.fr";  // Remplace par ton adresse email
         
         // Sujet de l'email
         $objet = "Nouveau message de contact";
