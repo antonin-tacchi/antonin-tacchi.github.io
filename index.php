@@ -23,7 +23,7 @@ $projets = json_decode($projetsJson, true);
 </head>
 <body>
     <div class="hero-section">
-        <div class="hero-content">
+        <div class="hero-content" id="accueil">
             <div class="hero-background">
                 <img src="asset/espace.png" alt="Thème spatial en arrière-plan" class="hero-image">
                 <nav class="nav-container" aria-label="Navigation principale">
@@ -66,6 +66,9 @@ $projets = json_decode($projetsJson, true);
                         <p class="hero-subheading">Développeur full-stack créant des expériences web stellaires</p>
                         <div class="hero-buttons">
                             <a href="#contact" class="nav-link"><button class="secondary-button">Me Contacter</button></a>
+                            <div class="button-up-div">
+                            <a href="#accueil"><button class="button-up" type="button"><img class="fleche-top" src="asset/fleche-top.svg" alt=""></button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,5 +231,6 @@ $projets = json_decode($projetsJson, true);
             </footer>
         </div>
     </div>
+    
 </body>
 </html>
