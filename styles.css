@@ -534,6 +534,10 @@ i{
         padding: 20px;
     }
 
+    .project-card {
+        height: 450px;
+    }
+
     .hero-heading {
         font-size: 48px;
     }

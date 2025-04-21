@@ -26,7 +26,7 @@
     {
         "id": 3,
         "type": "projet-dev",
-        "lien-dev":"https://antonin-tacchi.students-laplateforme.io",
+        "lien-dev":"https://quizouille.tacchi-antonin.fr",
         "name": "Quizouille",
         "description": "Un site de quiz en ligne dans lequel on puet créer ses propre quiz et jouer au quiz des autres personnes.",
         "image": "asset/quizouille.png",
@@ -61,5 +61,28 @@
         "description": "Creation d'une modélisation 3D d'une salle de cours avec quelque détails.",
         "image": "asset/salle.png",
         "tags-1": "Blender"
+    },
+    {
+        "id": 7,
+        "type": "projet-dev",
+        "lien-dev":"https://gestion-eleve.tacchi-antonin.fr",
+        "name": "Gestion d'entrer d'élève",
+        "description": "Plateforme de gestion administratif pour un établissement scolaire avec une expérience administrateur fluide.",
+        "image": "asset/gestion-eleve.png",
+        "tags-1": "JavaScrip",
+        "tags-2": "HTML",
+        "tags-3": "CSS",
+        "tags-4": "Bootstrap"
+    },
+    {
+        "id": 8,
+        "type": "projet-dev",
+        "lien-dev":"#",
+        "name": "Zinema",
+        "description": "Plateforme de critique de film et série.",
+        "image": "asset/zinema.png",
+        "tags-1": "JavaScrip",
+        "tags-2": "HTML",
+        "tags-3": "Tailwind"
     }
 ]
