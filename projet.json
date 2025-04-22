@@ -77,7 +77,7 @@
     {
         "id": 8,
         "type": "projet-dev",
-        "lien-dev":"#",
+        "lien-dev":"https://zinema.abbadessa-dorian.fr",
         "name": "Zinema",
         "description": "Plateforme de critique de film et série.",
         "image": "asset/zinema.png",
